@@ -1,0 +1,5 @@
+{
+  "block.minigamearchitect.checkpoint_block": "Checkpoint Block",
+  "feedback.minigamearchitect.checkpoint_set": "Checkpoint set at %1$s %2$s %3$s",
+  "key.minigamearchitect.return_to_checkpoint": "Return to Checkpoint"
+}
