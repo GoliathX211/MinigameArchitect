@@ -1,5 +1,14 @@
 {
   "block.minigamearchitect.checkpoint_block": "Checkpoint Block",
   "feedback.minigamearchitect.checkpoint_set": "Checkpoint set at %1$s %2$s %3$s",
-  "key.minigamearchitect.return_to_checkpoint": "Return to Checkpoint"
+  "key.minigamearchitect.return_to_checkpoint": "Return to Checkpoint",
+
+  "block.minigamearchitect.slow_block": "Slow Block",
+  "block.minigamearchitect.slower_block": "Slower Block",
+  "block.minigamearchitect.slowest_block": "Slowest Block",
+  "block.minigamearchitect.fast_block": "Fast Block",
+  "block.minigamearchitect.faster_block": "Faster Block",
+  "block.minigamearchitect.fastest_block": "Fastest Block",
+
+  "block.minigamearchitect.reset_block": "Reset Block"
 }

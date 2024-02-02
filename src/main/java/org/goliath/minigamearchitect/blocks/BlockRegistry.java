@@ -16,9 +16,37 @@ import java.util.function.Supplier;
 
 public class BlockRegistry {
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MinigameArchitect.MOD_ID);
-    private static final RegistryObject<Block> CHECKPOINT_BLOCK = registerBlock(
-            "checkpoint_block",
+    private static final RegistryObject<Block> CHECKPOINT_BLOCK = registerBlock("checkpoint_block",
             () -> new CheckpointBlock(Block.Properties.of(Material.HEAVY_METAL)),
+            CreativeModeTab.TAB_MISC);
+    private static final RegistryObject<Block> SLOW_BLOCK = registerBlock("slow_block",
+            () -> new Block(Block.Properties.of(Material.HEAVY_METAL).speedFactor(0.75f)),
+            CreativeModeTab.TAB_MISC
+    );
+    private static final RegistryObject<Block> SLOWER_BLOCK = registerBlock("slower_block",
+            () -> new Block(Block.Properties.of(Material.HEAVY_METAL).speedFactor(0.5f)),
+            CreativeModeTab.TAB_MISC
+    );
+    private static final RegistryObject<Block> SLOWEST_BLOCK = registerBlock("slowest_block",
+            () -> new Block(Block.Properties.of(Material.HEAVY_METAL).speedFactor(0.25f)),
+            CreativeModeTab.TAB_MISC
+    );
+
+    private static final RegistryObject<Block> FAST_BLOCK = registerBlock("fast_block",
+            () -> new Block(Block.Properties.of(Material.HEAVY_METAL).speedFactor(1.5f)),
+            CreativeModeTab.TAB_MISC
+    );
+    private static final RegistryObject<Block> FASTER_BLOCK = registerBlock("faster_block",
+            () -> new Block(Block.Properties.of(Material.HEAVY_METAL).speedFactor(1.75f)),
+            CreativeModeTab.TAB_MISC
+    );
+    private static final RegistryObject<Block> FASTEST_BLOCK = registerBlock("fastest_block",
+            () -> new Block(Block.Properties.of(Material.HEAVY_METAL).speedFactor(2.0f)),
+            CreativeModeTab.TAB_MISC
+    );
+
+    private static final RegistryObject<Block> RESET_BLOCK = registerBlock("reset_block",
+            () -> new ResetBlock(Block.Properties.of(Material.HEAVY_METAL)),
             CreativeModeTab.TAB_MISC
     );
 
